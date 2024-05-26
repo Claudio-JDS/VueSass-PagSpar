@@ -1,0 +1,28 @@
+@import '../abstract/variaveis';
+@import '../abstract/mixins';
+
+#servico{
+  background: $gradiente-primario;
+  padding: 5rem 0;
+
+  .cards{
+    @include margem-central(80%);
+    display: flex;
+    gap: 1.5rem;
+
+    .card{
+      background: $gradiente-secundario;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      border: 1px solid #ffffff;
+      border-radius: 0.8rem;
+
+      &-titulo{
+        @include ff-fs-cl($ft-titulos, 1.6rem, $cor-primaria)
+      }
+      &-tsxto{
+        @include ff-fs-cl($ft-titulos, 1.2rem, $cor-primaria)
+      }
+    }
+  }
+}

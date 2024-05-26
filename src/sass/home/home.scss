@@ -1,0 +1,42 @@
+// @use '../abstract/mixins';
+// @use '../abstract/variaveis';
+@import '../abstract/mixins';
+@import '../abstract/variaveis';
+
+#nosso-espaco{
+  @include margem-central(80%);
+
+  .detalhes{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem 0;
+    
+    .imgs-espaco{
+      max-width: 500px;
+    }
+    .espaco-textos{
+      @extend .imgs-espaco;
+
+      .titulo{
+        @include ff-fs-cl($ft-titulos, 1.8rem, $cor-secundaria);
+        font-weight: 500;
+      }
+
+      .infos{
+        @include ff-fs-cl($ft-textos, 1.2rem, $cor-primaria);
+      }
+
+      .separador{
+        width: 100%;
+      }
+    }
+
+    // &(parent select) -> faz referencia ao elemento paai que está aninhado
+    &:nth-child(2){
+      flex-direction: row-reverse;
+    }
+  }
+}

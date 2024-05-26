@@ -42,4 +42,6 @@ import IconDiasEspeciais from '@/assets/icon-dias-especiais.png'
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+@import '../../sass/servicos/servicos.css';
+</style>

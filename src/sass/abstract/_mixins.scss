@@ -1,0 +1,21 @@
+// Margem
+@mixin margem-central($width){
+  margin: 0 auto;
+  width: $width;
+}
+
+// Fonte
+@mixin ff-fs-cl($f-family, $f-size, $f-color) {
+  font-family: $f-family;
+  font-size: $f-size;
+  color: $f-color;
+}
+
+//Btns
+@mixin style-btn($height, $width, $border, $border-radius, $cursor) {
+  height: $height;
+  width: $width;
+  border-radius: $border-radius;
+  border: $border;
+  cursor: $cursor;
+}

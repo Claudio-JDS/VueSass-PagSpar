@@ -1,27 +1,79 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
 header {
-  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
-  padding: 2rem;
+    background: $gradiente-primario;
+    padding: 2rem;
+
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1.6rem;
+
         .linha {
             border-top: 1px solid black;
             width: 80%;
         }
+
         ul {
             display: inline-flex;
             gap: 2rem;
+
             li {
                 list-style-type: none;
             }
+
             a {
                 text-decoration: none;
-                color: rgb(12, 4, 33);
+                @include ff-fs-cl($ft-textos, 1rem, $cor-primaria);
                 font-weight: 500;
-                font-family: "Montserrat", sans-serif;
             }
+        }
+    }
+
+    #home {
+        max-width: 1040px;
+        @include margem-central(80%);
+        // width: 80%;
+        // margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .textos-home {
+            width: 464px;
+
+            h1 {
+                font-size: 40px;
+                color: $cor-primaria;
+                margin-bottom: 2rem;
+                font-family: $ft-titulos;
+
+                span {
+                    color: $cor-secundaria;
+                }
+            }
+        }
+
+        .img-home {
+            max-width: 474px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .btn-main {
+            background-color: $cor-secundaria;
+            color: $cor-quiternaria;
+            font-family: $ft-btn;
+            font-size: larger;
+            @include style-btn(3.5rem, 12rem, none, 5.5rem, pointer)
+        }
+
+        .btn-main:hover {
+            background-color: $cor-hover-btn;
         }
     }
 }
