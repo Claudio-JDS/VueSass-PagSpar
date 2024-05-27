@@ -54,4 +54,6 @@ import ContatoImg3 from '@/assets/contato-img-3.png'
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+@import '../../sass/form/form.css';
+</style>
