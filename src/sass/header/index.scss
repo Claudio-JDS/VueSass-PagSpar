@@ -1,5 +1,5 @@
-@use '../abstract/variaveis';
-@use '../abstract/mixins';
+@import '../abstract/mixins';
+@import '../abstract/variaveis';
 
 header {
     background: $gradiente-primario;
@@ -28,6 +28,10 @@ header {
                 text-decoration: none;
                 @include ff-fs-cl($ft-textos, 1rem, $cor-primaria);
                 font-weight: 500;
+
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
     }

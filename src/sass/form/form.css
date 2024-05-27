@@ -33,12 +33,15 @@
 }
 #desconto .input-btn button {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #ffffff;
   width: 276.5px;
   background: #4e75ff;
   border-radius: 0 65px 65px 0;
   border: none;
+}
+#desconto .input-btn button:hover {
+  background: #1d3eb6;
 }
 
 #contatos {

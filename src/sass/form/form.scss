@@ -35,11 +35,15 @@
     }
 
     button {
-      @include ff-fs-cl($ft-textos, 1rem, #ffffff);
+      @include ff-fs-cl($ft-textos, 1.3rem, #ffffff);
       width: calc($largura-input * 0.35);
       background: $cor-secundaria;
       border-radius: 0 65px 65px 0;
       border: none;
+
+      &:hover{
+        background: $cor-hover-btn;
+      }
     }
   }
 }
